@@ -24,10 +24,6 @@ body {
     text-decoration: none;
 }
 
-.header {
-    background-color: var(--white-text-color);
-}
-
 .container {
     margin-left: auto;
     margin-right: auto;
@@ -35,6 +31,11 @@ body {
     padding-left: 15px;
     padding-right: 15px;
 }
+
+.header {
+    background-color: var(--white-text-color);
+}
+
 
 .main {
     display: flex;
@@ -119,21 +120,6 @@ body {
     padding-bottom: 200px;
 }
 
-.advantages-list {
-    display: flex;
-}
-
-.our-team {
-    background-color: var(--background-color-team);
-    padding-bottom: 94px;
-    padding-top: 94px;
-}
-
-.employee-name, 
-.employee-position {
-    background-color: var(--white-text-color);
-}
-
 .description {
     margin-top: 0px;
     margin-bottom: 30px;
@@ -160,11 +146,14 @@ body {
     border-radius: 4px;
     }
 
+.advantages-list {
+    display: flex;
+}
+
 .advantages {
     padding-top: 94px;
     padding-bottom: 47px;
-    }
-
+}
 
 .advantages-description {
     margin-top: 0px;
@@ -212,6 +201,17 @@ body {
     color: var(--title-text-color);
 }
 
+.our-team {
+    background-color: var(--background-color-team);
+    padding-bottom: 94px;
+    padding-top: 94px;
+}
+
+.employee-name, 
+.employee-position {
+    background-color: var(--white-text-color);
+}
+
 .team-list {
     display: flex;
     justify-content: space-between;
@@ -251,13 +251,15 @@ body {
     justify-content: space-around;
 }
 
-.contacts-footer {
-    display: block;
+.contacts-item {
+    display: flex;
+    flex-direction: column;
 }
 
-.contacts-item.header-email-link {
+.contacts-item > .header-email-link {
     margin-bottom: 9px;
 }
+
 .address {
     font-style: normal;
     color: var(--white-text-color);
@@ -270,8 +272,19 @@ body {
     letter-spacing: 0.03em;
 }
 
+.portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .portfolio-list {
     display: flex;
+    justify-content: center;
+    margin-bottom: 34px;
+}
+
+.portfolio-item {
+    align-self: center;
 }
 
 .portfolio-item:not(:last-child) {
