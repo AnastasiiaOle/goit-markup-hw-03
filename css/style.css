@@ -338,6 +338,7 @@ body {
     min-width: 73px;
     display: inline-block;
     padding: 6px 22px;
+    border: 0;
     border-radius: 4px;
     font-weight: 500;
     font-size: 16px;
@@ -345,6 +346,7 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
+    background: #F5F4FA;
 }
 
 .portfolio-button:hover,
